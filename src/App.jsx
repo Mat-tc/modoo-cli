@@ -5,12 +5,13 @@ import Mypage from "./pages/mypage"
 import Login from "./pages/login"
 import Review from "./pages/review"
 import Home from "./pages/home"
-
+import Header from "./components/common/header"
+import styles from "./App.css"
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <BrowserRouter>
-        {/* header */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>

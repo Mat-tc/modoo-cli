@@ -1,6 +1,6 @@
 import React from "react"
-
+import styles from "./page.module.css"
 const Mypage = () => {
-  return <>mypage</>
+  return <section className={styles.container}>mypage</section>
 }
 export default Mypage
