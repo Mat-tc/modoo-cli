@@ -1,16 +1,24 @@
-.container{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1rem;
+@value --font-m from '@css/font.css';
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
 }
 
-.menuContainer{
-  display: flex;
-  align-items: flex-end
+.menuContainer {
+    display: flex;
+    align-items: flex-end;
+    font-size: --font-m;
 }
-li{
-  list-style:  none;
-  display: flex;
-  margin: 0 1rem;
+li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .menuContainer {
+        display: none;
+    }
 }

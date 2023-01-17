@@ -1,5 +1,4 @@
 const path = require('path')
-
 module.exports = {
     webpack: {
         alias: {
@@ -7,6 +6,11 @@ module.exports = {
             '@components': path.resolve(__dirname, 'src/components'),
             '@css': path.resolve(__dirname, 'src/css'),
             '@page': path.resolve(__dirname, 'src/pages'),
+        },
+    },
+    style: {
+        postcss: {
+            plugins: [require('postcss-nested'), require('autoprefixer')],
         },
     },
 }
