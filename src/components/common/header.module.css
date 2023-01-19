@@ -17,6 +17,14 @@ li {
     padding: 0.5rem;
 }
 
+.menu:hover{
+    cursor: pointer;
+    color: #C0EEE4;
+    text-shadow: 1px 1px 6px gray;
+    text-decoration: underline;
+    
+}
+
 @media (max-width: 576px) {
     .menuContainer {
         display: none;

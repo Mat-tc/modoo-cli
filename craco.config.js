@@ -1,16 +1,16 @@
-const path = require('path')
+const path = require("path")
 module.exports = {
-    webpack: {
-        alias: {
-            '@': path.resolve(__dirname, 'src/'),
-            '@components': path.resolve(__dirname, 'src/components'),
-            '@css': path.resolve(__dirname, 'src/css'),
-            '@page': path.resolve(__dirname, 'src/pages'),
-        },
+  webpack: {
+    alias: {
+      "@": path.resolve(__dirname, "src/"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@css": path.resolve(__dirname, "src/css"),
+      "@page": path.resolve(__dirname, "src/pages"),
     },
-    style: {
-        postcss: {
-            plugins: [require('postcss-nested'), require('autoprefixer')],
-        },
+  },
+  style: {
+    postcss: {
+      plugins: [require("postcss-nested"), require("autoprefixer")],
     },
+  },
 }
