@@ -3,6 +3,9 @@ import styles from './header.module.css'
 import button from '@css/button.module.css'
 import { Link } from 'react-router-dom'
 
+// import { useContext } from 'react'
+// import { ThemeContext } from '../../App'
+import ThemeToggle from './themeToggle'
 const Header = () => {
   return (
     <div className={styles.container}>
@@ -29,6 +32,7 @@ const Header = () => {
         <li className={`${styles.menu} ${button.btn}`}>
           <Link to={'login'}>로그인</Link>
         </li>
+        <ThemeToggle />
       </div>
     </div>
   )

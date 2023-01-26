@@ -11,6 +11,7 @@
   align-items: flex-end;
   font-size: --font-m;
 }
+
 li {
   list-style: none;
   margin: 0 1rem;
@@ -21,6 +22,16 @@ li {
   color: #c0eee4;
   text-shadow: 1px 1px 6px gray;
   text-decoration: underline;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+}
+
+.themeIcon {
+  width: fit-content;
+  padding: 0 0;
 }
 
 @media (max-width: 576px) {

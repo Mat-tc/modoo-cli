@@ -1,4 +1,5 @@
 @import url('./css/font.css');
+@import url('./css/theme.css');
 
 body {
   margin: 0;
@@ -7,10 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #313131;
-  color: #fff;
   min-height: 100vh;
   font-family: 'GmarketSansMedium';
+  background: var(--bg-color);
+  color: var(--text-primary);
   min-width: 368px;
 }
 

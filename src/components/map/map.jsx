@@ -8,14 +8,11 @@ const Map = () => {
   const geolocation = useGeolocation()
   const container = useRef(null)
   const options = {
-    center: new window.kakao.maps.LatLng(
-      geolocation.latitude,
-      geolocation.longitude
-    ), //지도의 중심좌표.
+    center: new kakao.maps.LatLng(geolocation.latitude, geolocation.longitude), //지도의 중심좌표.
     level: 3,
   }
   useEffect(() => {
-    new window.kakao.maps.Map(container.current, options)
+    new kakao.maps.Map(container.current, options)
   }, [])
 
   return <div id='map' ref={container} className={styles.container}></div>
