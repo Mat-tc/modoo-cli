@@ -1,9 +1,9 @@
-import React from "react"
-import styles from "./page.module.css"
-import Map from "@components/map/map"
+import React from 'react'
+import page from './page.module.css'
+import Map from '@components/map/map'
 const Home = () => {
   return (
-    <section className={styles.container}>
+    <section className={page.container}>
       <Map />
     </section>
   )

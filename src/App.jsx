@@ -6,6 +6,7 @@ import Login from './pages/login'
 import Review from './pages/review'
 import Home from './pages/home'
 import Header from './components/common/header'
+import Board from '@page/board'
 import styles from './App.css'
 export const ThemeContext = createContext()
 function App() {
@@ -24,6 +25,8 @@ function App() {
               <Route exact path='/' element={<Home />} />
               <Route exact path='/login' element={<Login />} />
               <Route exact path='/review' element={<Review />} />
+
+              <Route exact path='/board' element={<Board />} />
               <Route exact path='/mypage' element={<Mypage />} />
             </Routes>
           </main>

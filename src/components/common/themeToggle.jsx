@@ -9,7 +9,6 @@ const ThemeToggle = () => {
   const theme = darkMode ? 'light' : 'dark'
 
   const clickThemeHandler = (theme) => {
-    console.log(theme)
     setDarkMode(!darkMode)
     document.documentElement.className = theme
   }
