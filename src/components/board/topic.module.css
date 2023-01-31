@@ -1,0 +1,13 @@
+@value --font-xs,--font-s from '@css/font.css';
+@value --text-secondary from '@css/theme.css';
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gotoLink {
+  font-size: --font-xs;
+}
+.ranks {
+  font-size: --font-s;
+}

@@ -1,3 +1,9 @@
 .container {
-    padding: 3rem 1rem;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 575px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

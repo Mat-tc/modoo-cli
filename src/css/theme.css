@@ -1,12 +1,13 @@
 :root.light {
   --bg-color: #fff;
   --text-primary: #313131;
-  --text-secondary: royalblue;
+  --text-secondary: #5f5f5f;
   --accent: purple;
 }
 :root.dark {
   --bg-color: #313131;
   --text-primary: #fff;
+  --text-secondary: #faf8ff;
   --text-secondary: grey;
   --accent: darkred;
 }
