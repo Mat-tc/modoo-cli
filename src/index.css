@@ -144,3 +144,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button{
+  cursor: pointer;
+  background-color: inherit;
+  color :inherit;
+  border-color: inherit;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 10px;
+}
+hr{
+  margin: 3rem 0;
+  color: var(--text-secondary);
+}
