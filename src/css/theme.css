@@ -4,6 +4,7 @@
   --text-secondary: #5f5f5f;
   --text-accent: #d3756b;
   --text-warning: #f2cd5c;
+
 }
 :root.light {
   --bg-color: #fff;

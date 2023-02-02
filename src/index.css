@@ -24,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: 'KOTRA_GOTHIC';
+  font-family: 'NEXON Lv2 Gothic';
   min-height: 100vh;
 
   background: var(--bg-color);
@@ -40,7 +40,7 @@ body {
   color: var(--text-accent);
 }
 
-.text-warting : {
+.text-warting {
   color: var(--text-warning);
 }
 
@@ -180,7 +180,9 @@ li {
   list-style: none;
   line-height: 2;
 }
-
+.goto{
+  padding: 0 0.3rem;
+}
 .goto:hover {
   text-decoration: underline;
   text-underline-position: under;
@@ -214,4 +216,12 @@ input {
   border: none;
   background: inherit;
   caret-color: var(--text-primary);
+}
+
+input, button, textarea {
+  font-family: 'NEXON Lv2 Gothic';
+}
+
+input[type="password"] {
+  font:small-caption;font-size:16px
 }
