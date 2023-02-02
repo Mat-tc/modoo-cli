@@ -9,12 +9,7 @@
   padding: 0.2rem 0.5rem;
   max-width: 206px;
 }
-.subContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0.5rem;
-}
+
 span {
   display: inline-block;
   padding: 0 0.2rem;
