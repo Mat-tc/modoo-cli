@@ -1,0 +1,129 @@
+.LoginContainer {
+  display: block;
+  max-width: 680px;
+  width: 80%;
+  margin: 120px auto;
+  /* background-color: salmon; */
+}
+
+h1 {
+  color: black;
+  font-size: 400%;
+  text-align: center;
+  margin: 24% 0 0 0;
+}
+
+.pd {
+  color: black;
+  font-size: 100%;
+  text-align: center;
+}
+
+.loginpa {
+  width: 100%;
+  max-width: 680px;
+  margin: 40px auto 10px;
+}
+
+.LoginID,
+.LoginPassword {
+  margin: 2% auto;
+  display: block;
+  position: relative;
+}
+input {
+  display: block;
+  width: 89%;
+  max-width: 680%;
+  height: 50px;
+  margin: 2% auto;
+  border-radius: 8px;
+  border: 1px solid black;
+  background: white;
+  color: #2d2e2d;
+  font-size: 100%;
+  padding-left: 10px;
+}
+
+.LoginBtn {
+  background: #e91e63;
+  color: black;
+  display: block;
+  width: 91%;
+  max-width: 680px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 2% auto;
+  border: none;
+  cursor: pointer;
+  font-size: 120%;
+}
+
+.separate {
+  display: block;
+  margin: 30px auto 10px;
+  text-align: center;
+  height: 40px;
+  position: relative;
+  background: transparent;
+  color: black;
+  font-size: 13px;
+  width: 90%;
+  max-width: 680px;
+}
+.separate::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: black;
+  height: 1px;
+  width: 45%;
+}
+.separate::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: black;
+  height: 1px;
+  width: 45%;
+}
+
+.KakaoBtn,
+.NaverBtn,
+.GoogleBtn {
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 2% auto;
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+}
+.KakaoBtn {
+  background: #e8cb26;
+  color: black;
+}
+.NaverBtn {
+  background: #37fd55;
+  color: black;
+}
+.GoogleBtn {
+  background: #ffffff;
+  color: black;
+}
+
+.forgetID {
+  color: black;
+  font-size: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
