@@ -1,0 +1,75 @@
+.MainSignup {
+  display: flex;
+  width: 700px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup_id,
+.signup_pw,
+.signup_rePw,
+.signup_name,
+.signup_phone {
+  height: 54px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  margin: 3% auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.signup_birth_yy,
+.signup_birth_dd {
+  width: 33%;
+  height: 54px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.signup_bir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto;
+}
+
+.signup_birth_mm {
+  width: 33%;
+  height: 56px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 8px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.signup_gender {
+  background-color: white;
+  width: 100%;
+  height: 54px;
+  border: 1px solid black;
+  margin: 3% auto;
+  border-radius: 8px;
+  outline: none;
+}
+
+.SignupBtn {
+  background: #e91e63;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 51px;
+  border-radius: 8px;
+  margin: 2% auto;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 120%;
+}
