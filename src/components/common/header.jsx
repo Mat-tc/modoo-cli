@@ -15,23 +15,23 @@ const Header = () => {
         </h2>
       </div>
       <div className={styles.menuContainer}>
-        <li className={`${styles.menu} ${button.btn}`}>
+        <h4 className={`${styles.menu} ${button.btn}`}>
           <Link to={'center'}>센터조회</Link>
-        </li>
-        <li className={`${styles.menu} ${button.btn}`}>
+        </h4>
+        <h4 className={`${styles.menu} ${button.btn}`}>
           <Link to={'ticket'}>이용권</Link>
-        </li>
-        <li className={`${styles.menu} ${button.btn}`}>
+        </h4>
+        <h4 className={`${styles.menu} ${button.btn}`}>
           <Link to={'board'}>커뮤니티</Link>
-        </li>
-        <li className={`${styles.menu} ${button.btn}`}>
+        </h4>
+        <h4 className={`${styles.menu} ${button.btn}`}>
           <Link to={'faq'}>문의</Link>
-        </li>
+        </h4>
       </div>
       <div className={styles.loginContainer}>
-        <li className={`${styles.menu} ${button.btn}`}>
+        <h5 className={`${styles.menu} ${button.btn}`}>
           <Link to={'login'}>로그인</Link>
-        </li>
+        </h5>
         <ThemeToggle />
       </div>
     </div>

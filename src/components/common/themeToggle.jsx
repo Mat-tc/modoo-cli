@@ -19,14 +19,14 @@ const ThemeToggle = () => {
           className={`${styles.themeIcon} ${button.btn}`}
           onClick={() => clickThemeHandler(theme)}
         >
-          <Sun width='15' height='15' fill='white' />
+          <Sun width='15' height='15' />
         </li>
       ) : (
         <li
           className={`${styles.themeIcon} ${button.btn}`}
           onClick={() => clickThemeHandler(theme)}
         >
-          <Moon width='15' height='15' fill='#000' />
+          <Moon width='15' height='15' fill='#F2CD5C' />
         </li>
       )}
     </div>
