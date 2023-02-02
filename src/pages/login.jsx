@@ -1,10 +1,11 @@
 import React from "react"
-// import { useNavigate } from "react-router-dom"
 import styles from "../components/login/login.module.css"
 import page from "./page.module.css"
 import classNames from "classnames"
+import { useNavigate } from "react-router-dom"
 
 const Login = () => {
+  const navigate = useNavigate()
   return (
     <section className={page.container}>
       <div className={styles.LoginContainer}>
@@ -46,7 +47,9 @@ const Login = () => {
         <p className={classNames(styles.forgetID)}>
           아이디를 잊으셨나요?&nbsp; &nbsp;
           <span className="goto">아이디찾기</span>
-          <span className="goto">회원가입</span>
+          <span className="goto" onClick={() => navigate("/signup")}>
+            회원가입
+          </span>
         </p>
       </div>
     </section>

@@ -1,27 +1,19 @@
-import React from "react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import styles from "../components/signup/signup.module.css";
-
+import React from "react"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import styles from "../components/signup/signup.module.css"
+import page from "./page.module.css"
 const Signup = () => {
-  let navigate = useNavigate();
-  const [pw, setPw] = useState("");
-  const [rePw, setRePw] = useState("");
-  const [isSamePwAndRePw, setIsSamePwAndRePw] = useState(true);
+  let navigate = useNavigate()
+  const [pw, setPw] = useState("")
+  const [rePw, setRePw] = useState("")
+  const [isSamePwAndRePw, setIsSamePwAndRePw] = useState(true)
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "100%",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <section className={page.container}>
       <div className={styles.MainSignup}>
-        <span style={{ fontSize: "60px", fontWeight: "bold" }}>회원가입</span>
+        <h2>회원가입</h2>
 
-        <div style={{ width: "100%" }}>
+        <div className={styles.container}>
           <input
             className={styles.signup_id}
             type="text"
@@ -34,14 +26,14 @@ const Signup = () => {
             placeholder="비밀번호"
             value={pw}
             onChange={(e) => {
-              console.log(e.target.value);
-              setPw(e.target.value);
+              console.log(e.target.value)
+              setPw(e.target.value)
             }}
             onBlur={() => {
               if (rePw !== "" && pw !== rePw) {
-                setIsSamePwAndRePw(false);
+                setIsSamePwAndRePw(false)
               } else {
-                setIsSamePwAndRePw(true);
+                setIsSamePwAndRePw(true)
               }
             }}
           />
@@ -53,16 +45,16 @@ const Signup = () => {
             value={rePw}
             disabled={pw === ""}
             onChange={(e) => {
-              console.log(e.target.value);
-              setRePw(e.target.value);
+              console.log(e.target.value)
+              setRePw(e.target.value)
             }}
             onBlur={() => {
               // 비밀번호랑 비밀번호 재확인이 다를때
               // input창 밑에 비밀번호가 일치하지 않는다고 뜸
               if (pw !== rePw) {
-                setIsSamePwAndRePw(false);
+                setIsSamePwAndRePw(false)
               } else {
-                setIsSamePwAndRePw(true);
+                setIsSamePwAndRePw(true)
               }
             }}
           />
@@ -132,14 +124,14 @@ const Signup = () => {
           <button
             className={styles.SignupBtn}
             onClick={() => {
-              navigate("/login");
+              navigate("/login")
             }}
           >
             회원가입
           </button>
         </div>
       </div>
-    </div>
-  );
-};
-export default Signup;
+    </section>
+  )
+}
+export default Signup
