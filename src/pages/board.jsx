@@ -1,14 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import page from './page.module.css'
 import classNames from 'classnames'
 import Topic from '../components/board/topic'
 import styles from './board.module.css'
-import { ThemeContext } from '@/App'
-import { ReactComponent as User } from '@icon/user.svg'
+import Header from '@components/board/header/header'
+import Search from '@components/board/header/search'
 const Board = () => {
-  const { darkMode } = useContext(ThemeContext)
-  const theme = darkMode ? 'light' : 'dark'
-
   const categories = [
     { id: 96, title: 'should' },
     { id: 54, title: 'inch' },
@@ -31,17 +28,9 @@ const Board = () => {
   ]
   return (
     <main className={page.container}>
-      <div className={styles.subContainer}>
-        <h3>🔥 떠오르는 인기 톡</h3>
-        <dd className={classNames(styles.center, 'goto')}>
-          <User
-            width='15'
-            height='15'
-            fill={theme == 'dark' ? 'black' : '#fff'}
-          />
-          <h5>내가 쓴글</h5>
-        </dd>
-      </div>
+      <Search />
+      <Header title='🔥 떠오르는 인기 톡' />
+
       <section className={classNames(styles.container)}>
         <Topic title='핫톡' />
         <Topic title='복싱톡' />

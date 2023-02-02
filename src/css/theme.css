@@ -2,19 +2,20 @@
   --bg-color: #fff;
   --text-primary: #313131;
   --text-secondary: #5f5f5f;
-  --accent: purple;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
 }
 :root.light {
   --bg-color: #fff;
   --text-primary: #313131;
   --text-secondary: #5f5f5f;
-  --text-accent: purple;
-  --text-warning: yellow;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
 }
 :root.dark {
   --bg-color: #313131;
   --text-primary: #fff;
   --text-secondary: #999;
-  --text-accent: darkred;
-  --text-warning: yellow;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
 }

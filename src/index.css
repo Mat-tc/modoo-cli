@@ -202,3 +202,16 @@ h4,
 h5 {
   font-weight: 400;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: inherit;
+  caret-color: var(--text-primary);
+}
