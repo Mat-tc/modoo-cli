@@ -104,7 +104,7 @@ input {
   font-size: 100%;
 }
 .KakaoBtn {
-  background: #e8cb26;
+  background: #ffee2e;
   color: black;
 }
 .NaverBtn {
@@ -114,6 +114,7 @@ input {
 .GoogleBtn {
   background: #ffffff;
   color: black;
+  border: 1px solid black;
 }
 
 .forgetID {
