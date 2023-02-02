@@ -3,7 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .menuContainer {
@@ -11,16 +13,27 @@
   align-items: flex-end;
   font-size: --font-m;
 }
-li {
+
+.menu {
   list-style: none;
-  margin: 0 1rem;
   padding: 0.5rem;
+  margin: auto 0.5rem;
 }
 
 .menu:hover {
   color: #c0eee4;
   text-shadow: 1px 1px 6px gray;
   text-decoration: underline;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+}
+
+.themeIcon {
+  width: fit-content;
+  padding: 0 0;
 }
 
 @media (max-width: 576px) {
