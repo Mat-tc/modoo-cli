@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../components/login/login.module.css";
 
 const Login = () => {
+  let navigate = useNavigate();
   return (
     <div className={styles.LoginContainer}>
       <h1>로그인</h1>
@@ -39,7 +41,14 @@ const Login = () => {
 
       <p className={styles.forgetID}>
         아이디를 잊으셨나요?&nbsp; &nbsp;<a href="">아이디찾기</a>&nbsp; &nbsp;
-        <a href="./signup">회원가입</a>
+        <a
+          onClick={() => {
+            navigate("/signup");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          회원가입
+        </a>
       </p>
     </div>
   );
