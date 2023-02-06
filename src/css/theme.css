@@ -1,0 +1,22 @@
+:root {
+  --bg-color: #fff;
+  --text-primary: #313131;
+  --text-secondary: #5f5f5f;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
+
+}
+:root.light {
+  --bg-color: #fff;
+  --text-primary: #313131;
+  --text-secondary: #5f5f5f;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
+}
+:root.dark {
+  --bg-color: #313131;
+  --text-primary: #fff;
+  --text-secondary: #999;
+  --text-accent: #d3756b;
+  --text-warning: #f2cd5c;
+}

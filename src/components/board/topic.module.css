@@ -1,0 +1,32 @@
+@value --font-xs,--font-s from '@css/font.css';
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.gotoLink {
+  font-size: --font-xs;
+}
+.ranks {
+  font-size: --font-s;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+}
+.comment {
+  font-size: --font-xs;
+  color: var(--text-secondary);
+}
+.title:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.list:hover {
+  cursor: pointer;
+}

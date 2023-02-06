@@ -1,24 +1,56 @@
 @import url('./css/font.css');
+@import url('./css/theme.css');
+@import url('../node_modules/claymorphism-css/dist/clay.css');
+
+.clay {
+  /* Modify clay.css properties */
+  --clay-border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.clay.card.light {
+  --clay-background: #fff;
+  box-shadow: inset -0.6em -0.6em 1em rgba(168, 205, 193, 0.4),
+    inset 0.4em 0.4em 0.5em rgba(168, 205, 193, 0.2),
+    0.8em 0.8em 2em rgba(95, 106, 113, 0.4);
+}
+
+.clay.card.dark {
+  --clay-background: #313131;
+  box-shadow: inset -0.6em -0.6em 1em rgba(49, 49, 49, 0.9),
+    inset 0.4em 0.4em 0.5em rgba(95, 95, 95, 0.4),
+    0.8em 0.8em 2em rgba(95, 95, 95, 0.4);
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #313131;
-  color: #fff;
+  font-family: 'NEXON Lv2 Gothic';
   min-height: 100vh;
-  font-family: 'GmarketSansMedium';
+
+  background: var(--bg-color);
+  color: var(--text-primary);
   min-width: 368px;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+.text-warting {
+  color: var(--text-warning);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+li {
+  padding: 0 0;
+}
 html,
 body,
 div,
@@ -26,12 +58,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -95,7 +121,12 @@ nav,
 output,
 ruby,
 section,
-summary,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 summary,
 time,
 mark,
 audio,
@@ -118,6 +149,7 @@ menu,
 nav,
 section {
   display: block;
+  padding: 0rem 0rem 3rem 0rem;
 }
 
 ol,
@@ -157,4 +189,53 @@ button{
 hr{
   margin: 3rem 0;
   color: var(--text-secondary);
+
+li {
+  list-style: none;
+  line-height: 2;
+}
+.goto{
+  padding: 0 0.3rem;
+}
+.goto:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'GmarketSansMedium';
+}
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: inherit;
+  caret-color: var(--text-primary);
+}
+
+input, button, textarea {
+  font-family: 'NEXON Lv2 Gothic';
+}
+
+input[type="password"] {
+  font:small-caption;font-size:16px
 }

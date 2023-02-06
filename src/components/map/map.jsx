@@ -5,17 +5,19 @@ import useGeolocation from "react-hook-geolocation"
 import styles from "./map.module.css"
 /*global kakao*/
 const Map = () => {
-  const geolocation = useGeolocation()
+  const [latitude, setLatitude] = useState(0)
+  const [longitude, setLongitude] = useState(0)
   const container = useRef(null)
   const options = {
-    center: new window.kakao.maps.LatLng(
-      geolocation.latitude,
-      geolocation.longitude
-    ), //지도의 중심좌표.
+    center: new kakao.maps.LatLng(latitude, longitude), //지도의 중심좌표.
     level: 3,
   }
   useEffect(() => {
-    new window.kakao.maps.Map(container.current, options)
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLatitude(position.coords.latitude)
+      setLongitude(position.coords.longitude)
+    })
+    new kakao.maps.Map(container.current, options)
   }, [])
 
   return <div id="map" ref={container} className={styles.container}></div>

@@ -1,0 +1,26 @@
+.float {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+.container {
+  border: 1px solid var(--text-secondary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 300px;
+}
+.input {
+  display: block;
+  width: calc(100% - 20px);
+}
+
+@media (max-width: 576px) {
+  .float {
+    justify-content: stretch;
+  }
+  .container {
+    min-width: calc(100% - 1rem);
+  }
+}

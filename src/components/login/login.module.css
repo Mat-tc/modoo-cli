@@ -1,0 +1,119 @@
+.LoginContainer {
+  max-width: 500px;
+  margin: 120px auto;
+}
+
+.h1{
+  text-align: center;
+}
+
+
+.pd {
+  font-size: 100%;
+  text-align: center;
+  margin : 1rem 0;
+}
+
+.loginpa {
+  width: 100%;
+  max-width: 680px;
+  margin: 40px auto 10px;
+}
+
+.inputForm {
+  border: 1px solid var(--text-secondary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.input {
+  width: calc(100% - 20px);
+  margin: 0 0;
+  background: inherit;
+}
+
+.LoginID,
+.LoginPassword {
+  margin: 2% auto;
+  display: block;
+  position: relative;
+}
+.inputForm {
+  border-radius: 8px;
+  padding: 1rem;
+  background: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.LoginBtn {
+  background: #e91e63;
+  display: block;
+  width: 100%;
+  padding : 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.separate {
+  display: block;
+  margin: 30px auto 10px;
+  text-align: center;
+  height: 40px;
+  position: relative;
+  background: transparent;
+  font-size: 13px;
+  width: 90%;
+  max-width: 680px;
+}
+.separate::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: black;
+  height: 1px;
+  width: 45%;
+}
+.separate::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: black;
+  height: 1px;
+  width: 45%;
+}
+
+.KakaoBtn,
+.NaverBtn,
+.GoogleBtn {
+  display: block;
+  width: 100%;
+  padding : 1rem;
+  border-radius: 8px;
+  margin: 2% auto;
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+  color: inherit;
+}
+.KakaoBtn {
+  background: 	#FEE500;
+}
+.NaverBtn {
+  background: #2DB400;
+}
+.GoogleBtn {
+  background: #ddd;
+}
+
+.forgetID {
+  font-size: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
