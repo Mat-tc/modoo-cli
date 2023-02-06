@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React, { useRef, useEffect, useState } from 'react'
-import useGeolocation from 'react-hook-geolocation'
-import styles from './map.module.css'
+import React, { useRef, useEffect, useState } from "react"
+import useGeolocation from "react-hook-geolocation"
+import styles from "./map.module.css"
 /*global kakao*/
 const Map = () => {
   const [latitude, setLatitude] = useState(0)
@@ -20,7 +20,7 @@ const Map = () => {
     new kakao.maps.Map(container.current, options)
   }, [])
 
-  return <div id='map' ref={container} className={styles.container}></div>
+  return <div id="map" ref={container} className={styles.container}></div>
 }
 
 export default Map

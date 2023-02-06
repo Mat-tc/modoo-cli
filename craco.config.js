@@ -1,6 +1,6 @@
-const CracoEnvPlugin = require('craco-plugin-env')
+const CracoEnvPlugin = require("craco-plugin-env")
 
-const path = require('path')
+const path = require("path")
 module.exports = {
   plugins: [
     {
@@ -12,6 +12,8 @@ module.exports = {
   ],
   webpack: {
     alias: {
+ path.resolve(__dirname, "src/pages"),
+
       '@': path.resolve(__dirname, 'src'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@icon': path.resolve(__dirname, 'src/assets/icon'),
@@ -21,7 +23,7 @@ module.exports = {
   },
   style: {
     postcss: {
-      plugins: [require('postcss-nested'), require('autoprefixer')],
+      plugins: [require("postcss-nested"), require("autoprefixer")],
     },
   },
 }

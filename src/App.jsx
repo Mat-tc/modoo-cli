@@ -9,7 +9,9 @@ import Header from "./components/common/header"
 import Board from "@page/board"
 import styles from "./App.css"
 import Signup from "./pages/signup"
+import CenterInfoPage from "@page/centerInfoPage"
 export const ThemeContext = createContext()
+
 function App() {
   const [darkMode, setDarkMode] = useState(false)
   const darkModeTheme = {
@@ -27,7 +29,11 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/review" element={<Review />} />
-
+              <Route
+                exact
+                path="/center/:centerId"
+                element={<CenterInfoPage />}
+              ></Route>
               <Route exact path="/board" element={<Board />} />
               <Route exact path="/mypage" element={<Mypage />} />
             </Routes>
