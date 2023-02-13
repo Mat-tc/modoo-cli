@@ -10,6 +10,7 @@ import Board from "@page/board"
 import styles from "./App.css"
 import Signup from "./pages/signup"
 import CenterInfoPage from "@page/centerInfoPage"
+import WriteBoard from "@page/writeboard"
 export const ThemeContext = createContext()
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
                 element={<CenterInfoPage />}
               ></Route>
               <Route exact path="/board" element={<Board />} />
+              <Route exact path="/board/wirte" element={<WriteBoard />} />
               <Route exact path="/mypage" element={<Mypage />} />
             </Routes>
           </main>

@@ -237,6 +237,16 @@ input,
 button,
 textarea {
   font-family: 'NEXON Lv2 Gothic';
+  
+}
+
+button.blue{
+  border: none;
+  background: var(--color-blue);
+}
+button.blue:hover{
+  background: var(--color-blue-darker);
+  
 }
 
 input[type='password'] {
