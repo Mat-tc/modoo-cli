@@ -9,7 +9,11 @@
   padding: 0.2rem 0.5rem;
   max-width: 206px;
 }
-
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 span {
   display: inline-block;
   padding: 0 0.2rem;
@@ -27,6 +31,11 @@ span {
 .listContainer:hover {
   cursor: pointer;
 }
+
+.float {
+  position: absolute;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;

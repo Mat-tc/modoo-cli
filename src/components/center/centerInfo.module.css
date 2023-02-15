@@ -1,25 +1,24 @@
-
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.list{
-  display : flex;
-
+.list {
+  display: flex;
 }
-.item{
+.item {
   padding: 0 1rem;
 }
-.sort{
-  min-width: 70px;
+.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
-  .container{
+  .container {
     grid-template-columns: 1fr;
   }
-  .infoContainer{
+  .infoContainer {
     margin-top: 2rem;
   }
 }
-
