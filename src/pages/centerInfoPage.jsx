@@ -1,7 +1,7 @@
-import React from "react"
-import page from "./page.module.css"
-import CenterInfo from "../components/center/centerInfo"
-import CenterContent from "../components/center/centerContent"
+import React from 'react'
+import page from './page.module.css'
+import CenterInfo from '../components/center/centerInfo'
+import CenterContent from '../components/center/centerContent'
 const CenterInfoPage = () => {
   return (
     <section className={page.container}>
