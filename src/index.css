@@ -216,6 +216,7 @@ hr {
   margin: 3rem 0;
   color: var(--text-secondary);
 }
+
 li {
   list-style: none;
   line-height: 2;
@@ -269,6 +270,3 @@ input[type='password'] {
   font-size: 16px;
 }
 
-.rsis-image {
-  position: relative;
-}
