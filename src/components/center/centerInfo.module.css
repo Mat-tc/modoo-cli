@@ -21,11 +21,23 @@
   align-items: center;
 }
 
+.infoContainer {
+  position: relative;
+}
+.resBtn {
+  position: absolute;
+  bottom: 0;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
   .infoContainer {
     margin-top: 2rem;
+  }
+  .resBtn {
+    position: relative;
+    margin-top: 1rem;
   }
 }

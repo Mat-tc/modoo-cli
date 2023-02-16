@@ -4,16 +4,18 @@ import SimpleImageSlider from 'react-simple-image-slider'
 import useWindowDimensions from '../common/window'
 import { ThemeContext } from '@/App'
 import { ReactComponent as Won } from '@icon/won.svg'
-import { ReactComponent as Clock } from '@icon/clock.svg'
+import { ReactComponent as Road } from '@icon/road.svg'
 import { ReactComponent as Phone } from '@icon/phone.svg'
 import { ReactComponent as Location } from '@icon/location.svg'
+import { ReactComponent as Home } from '@icon/home.svg'
 const CenterInfo = () => {
   const data = {
-    name: '남스짐 옥길점',
-    contact: '0507-1427-3375',
+    centerName: '남스짐 옥길점',
+    centerTel: '0507-1427-3375',
     address: '경기 부천시 옥길로 124 퀸즈파크 C동 8층 남스짐',
+    roadAddress: '경기 부천시 옥길로 124 퀸즈파크 C동 8층 남스짐',
+    homePage: 'http://m.golfzon.com/ghome/7564#!/ghome/main',
     price: '7000(운동복 포함)',
-    time: '09:00 ~ 24:00',
     rate: '4.3',
   }
 
@@ -50,7 +52,7 @@ const CenterInfo = () => {
       <div className={styles.infoContainer}>
         <div>
           <h3>
-            {data.name} (⭐{data.rate})
+            {data.centerName} (⭐{data.rate})
           </h3>
         </div>
         <div>
@@ -77,6 +79,17 @@ const CenterInfo = () => {
           </li>
           <li className={styles.list}>
             <dd className={styles.sort}>
+              <Road
+                width='15'
+                height='15'
+                fill={theme == 'dark' ? '#fff' : 'black'}
+                stroke={theme == 'dark' ? '#333' : '#fff'}
+              />
+            </dd>
+            <dd className={styles.item}>{data.roadAddress}</dd>
+          </li>
+          <li className={styles.list}>
+            <dd className={styles.sort}>
               <Phone
                 width='15'
                 height='15'
@@ -84,21 +97,22 @@ const CenterInfo = () => {
                 stroke={theme == 'dark' ? '#333' : '#fff'}
               />
             </dd>
-            <dd className={styles.item}>{data.contact}</dd>
+            <dd className={styles.item}>{data.centerTel}</dd>
           </li>
+
           <li className={styles.list}>
             <dd className={styles.sort}>
-              <Clock
+              <Home
                 width='15'
                 height='15'
                 fill={theme == 'dark' ? '#fff' : 'black'}
                 stroke={theme == 'dark' ? '#333' : '#fff'}
               />
             </dd>
-            <dd className={styles.item}>{data.time}</dd>
+            <dd className={styles.item}>{data.homePage}</dd>
           </li>
         </div>
-        <button>예약하기</button>
+        <button className={styles.resBtn}>예약하기</button>
       </div>
     </section>
   )
