@@ -32,14 +32,21 @@ const CenterInfo = () => {
   ]
   return (
     <section className={styles.container}>
-      <SimpleImageSlider
-        width={width > 768 ? '45%' : '100%'}
-        height={width > 768 ? 500 : 350}
-        images={images}
-        showBullets={true}
-        showNavs={true}
-        className={styles.images}
-      />
+      <div className={styles.imgSlider}>
+        <SimpleImageSlider
+          width={width > 768 ? '100%' : '100%'}
+          height={width > 768 ? 500 : 350}
+          position='relative'
+          images={images}
+          showBullets={true}
+          showNavs={true}
+          className={styles.images}
+          style={{
+            position: 'relative',
+            borderRadius: '10px',
+          }}
+        />
+      </div>
       <div className={styles.infoContainer}>
         <div>
           <h3>

@@ -268,3 +268,7 @@ input[type='password'] {
   font: small-caption;
   font-size: 16px;
 }
+
+.rsis-image {
+  position: relative;
+}
