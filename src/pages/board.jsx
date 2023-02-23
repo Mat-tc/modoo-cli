@@ -7,7 +7,11 @@ import btn from '@css/button.module.css'
 import Header from '@components/board/header/header'
 import Search from '@components/board/header/search'
 import { ThemeContext } from '@/App'
+
+import { useNavigate } from 'react-router-dom'
+
 const Board = () => {
+  const navigate = useNavigate()
   const { darkMode } = useContext(ThemeContext)
   const categories = [
     { id: 96, title: 'should' },
@@ -40,6 +44,7 @@ const Board = () => {
             'btn',
             darkMode ? 'dark' : 'light'
           )}
+          onClick={() => navigate('/board/write')}
         >
           새 글 작성하기
         </button>
