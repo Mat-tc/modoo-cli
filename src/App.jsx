@@ -35,8 +35,12 @@ function App() {
                 path='/center/:centerId'
                 element={<CenterInfoPage />}
               ></Route>
-              <Route exact path='/board' element={<Board />} />
+
+              {/* 커뮤니티 Board 관련 */}
+              <Route exact path='/board/*' element={<Board />} />
               <Route exact path='/board/write' element={<WriteBoard />} />
+
+              {/* 마이페이지 */}
               <Route exact path='/mypage' element={<Mypage />} />
             </Routes>
           </main>

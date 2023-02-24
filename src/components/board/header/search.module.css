@@ -1,6 +1,3 @@
-.float {
-  margin: 0;
-}
 .container {
   border: 1px solid var(--text-secondary);
   border-radius: 10px;

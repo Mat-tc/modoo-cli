@@ -1,0 +1,56 @@
+@value --font-xs,--font-s from '@css/font.css';
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.gotoCategory {
+  font-size: --font-s;
+  padding: 0.2rem 0.5rem;
+  max-width: 206px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  display: inline-block;
+  padding: 0 0.2rem;
+  font-size: --font-s;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
+}
+.listContainer:hover {
+  cursor: pointer;
+}
+
+.float {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .listContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .listContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}

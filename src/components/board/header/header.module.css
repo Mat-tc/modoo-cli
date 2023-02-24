@@ -3,9 +3,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0.5rem;
+  border-bottom: 1px solid var(--background-300);
+  margin-bottom: 1rem;
 }
 
-.btn{
-  width : fit-content;
+.btn {
+  width: fit-content;
   margin-left: 1rem;
 }
