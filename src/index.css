@@ -231,14 +231,16 @@ input[type='password'] {
   font-size: 16px;
 }
 
-.card {
-  background: #fff;
+.card.shadow {
+  background: var(--background-50);
   padding: 1rem;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.32);
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.32);
 }
 
-.card.dark {
-  background: #3c4048;
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--background-50);
 }

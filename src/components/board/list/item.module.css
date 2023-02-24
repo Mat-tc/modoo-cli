@@ -1,0 +1,19 @@
+@value --font-xs,--font-l from '@css/font.css';
+.container {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: --font-l;
+  font-weight: 600;
+}
+
+.content {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5rem;
+  max-height: 3.7rem;
+}

@@ -13,10 +13,12 @@ const Board = () => {
         <Search />
       </div>
 
-      <Routes>
-        <Route exact path='/' element={<Home />}></Route>
-        <Route path='/list/:categoryId' element={<List />}></Route>
-      </Routes>
+      <div>
+        <Routes>
+          <Route exact path='/' element={<Home />}></Route>
+          <Route path='/list/:categoryId' element={<List />}></Route>
+        </Routes>
+      </div>
     </main>
   )
 }

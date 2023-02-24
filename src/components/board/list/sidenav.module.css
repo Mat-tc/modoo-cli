@@ -1,0 +1,15 @@
+@value --font-xs,--font-s from '@css/font.css';
+.container {
+  width: 200px;
+  margin-right: 1rem;
+}
+
+.padding {
+  padding: 0 0.2rem;
+}
+.item {
+  font-size: --font-s;
+}
+.item:hover {
+  color: var(--text-secondary);
+}
