@@ -1,8 +1,8 @@
-import React from "react"
-import styles from "../components/login/login.module.css"
-import page from "./page.module.css"
-import classNames from "classnames"
-import { useNavigate } from "react-router-dom"
+import React from 'react'
+import styles from '../components/login/login.module.css'
+import page from './page.module.css'
+import classNames from 'classnames'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -18,18 +18,18 @@ const Login = () => {
           <div className={styles.inputForm}>
             <input
               className={styles.input}
-              type="email"
-              placeholder="ID"
-              id="id"
+              type='email'
+              placeholder='아이디'
+              id='id'
             />
           </div>
 
           <div className={styles.inputForm}>
             <input
               className={styles.input}
-              type="password"
-              placeholder="Password"
-              id="password"
+              type='password'
+              placeholder='비밀번호'
+              id='password'
             />
           </div>
         </div>
@@ -46,8 +46,8 @@ const Login = () => {
 
         <p className={classNames(styles.forgetID)}>
           아이디를 잊으셨나요?&nbsp; &nbsp;
-          <span className="goto">아이디찾기</span>
-          <span className="goto" onClick={() => navigate("/signup")}>
+          <span className='goto'>아이디찾기</span>
+          <span className='goto' onClick={() => navigate('/signup')}>
             회원가입
           </span>
         </p>

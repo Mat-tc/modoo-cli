@@ -205,16 +205,20 @@ h5 {
   justify-content: center;
 }
 
-input {
+input,
+select {
   outline: none;
   border: none;
   background: inherit;
   caret-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 input,
 button,
-textarea {
+textarea,
+select,
+option {
   font-family: 'NEXON Lv2 Gothic';
 }
 
@@ -224,11 +228,6 @@ button.blue {
 }
 button.blue:hover {
   background: var(--color-blue-darker);
-}
-
-input[type='password'] {
-  font: small-caption;
-  font-size: 16px;
 }
 
 .card {
