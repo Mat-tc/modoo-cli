@@ -1,16 +1,7 @@
 .container {
   display: flex;
-  width: 100%;
 }
 
 .contentsContainer {
-  width: 100%;
-  overflow: hidden;
-}
-.card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.32);
-  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.32);
+  width: calc(100% - 200px);
 }

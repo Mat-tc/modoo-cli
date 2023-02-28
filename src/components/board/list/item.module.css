@@ -1,19 +1,39 @@
-@value --font-xs,--font-l from '@css/font.css';
+@value --font-s,--font-l from '@css/font.css';
 .container {
   margin-bottom: 0.5rem;
   width: 100%;
+}
+.titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
   font-size: --font-l;
   font-weight: 600;
+  padding: 0.5rem 0;
 }
 
 .content {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  line-height: 1.5rem;
-  max-height: 3.7rem;
+}
+
+.etcContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: --font-s;
+}
+
+.iconGroup {
+  padding: 0 0.2rem;
+  display: flex;
 }
