@@ -13,7 +13,7 @@ const Topic = (props) => {
     { id: 41, title: 'Papua New Guinea', comment: 41 },
   ]
   return (
-    <div className={classNames('clay', 'card', darkMode ? 'dark' : 'light')}>
+    <div className={classNames('card', darkMode ? 'dark' : 'light')}>
       <div className={styles.titleContainer}>
         <h4>💬 {props.title}</h4>
         <dd className={classNames(styles.gotoLink, button.btn)}>바로가기</dd>

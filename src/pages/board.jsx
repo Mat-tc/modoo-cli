@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import page from './page.module.css'
 import classNames from 'classnames'
 import Topic from '../components/board/topic'
 import styles from './board.module.css'
+import btn from '@css/button.module.css'
 import Header from '@components/board/header/header'
 import Search from '@components/board/header/search'
+import { ThemeContext } from '@/App'
+
+import { useNavigate } from 'react-router-dom'
+
 const Board = () => {
+  const navigate = useNavigate()
+  const { darkMode } = useContext(ThemeContext)
   const categories = [
     { id: 96, title: 'should' },
     { id: 54, title: 'inch' },
@@ -28,7 +35,20 @@ const Board = () => {
   ]
   return (
     <main className={page.container}>
-      <Search />
+      <div className={styles.flex}>
+        <Search />
+        <button
+          className={classNames(
+            btn.btn,
+            'clay',
+            'btn',
+            darkMode ? 'dark' : 'light'
+          )}
+          onClick={() => navigate('/board/write')}
+        >
+          새 글 작성하기
+        </button>
+      </div>
       <Header title='🔥 떠오르는 인기 톡' />
 
       <section className={classNames(styles.container)}>

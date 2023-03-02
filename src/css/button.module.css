@@ -1,3 +1,7 @@
 .btn:hover {
     cursor: pointer;
 }
+
+.btn {
+  max-width: 10rem;
+}
