@@ -48,6 +48,7 @@
     0.8em 0.8em 2em rgba(95, 95, 95, 0.4);
 }
 
+
 body {
   margin: 0;
   font-family: 'NEXON Lv2 Gothic';
@@ -278,3 +279,14 @@ input[type='password'] {
   font-size: 16px;
 }
 
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.32);
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.32);
+}
+
+.card.dark {
+  background: #3c4048;
+}

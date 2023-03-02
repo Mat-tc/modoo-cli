@@ -11,3 +11,11 @@
   margin: 0 0;
   background: inherit;
 }
+
+.container {
+  border: 1px solid var(--text-secondary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
