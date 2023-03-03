@@ -3,33 +3,38 @@ import "../mypage.css";
 
 export const UserInfo = () => {
   return (
-    <div className="UserInfo">
-      <div className="MyTop">
-        <div className="MyImg"></div>
-        <div className="MyNick">
-          <span
-            style={{
-              fontSize: "1.6rem",
-              textAlign: "center",
-              marginBottom: "10px",
-            }}
-          >
-            닉네임
-          </span>
-          <span style={{ fontSize: "1.2rem", textAlign: "center" }}>지역</span>
+    <div>
+      <section className="UserInfoBody">
+        <div className="UserInfoCont">
+          <div className="UserInfoProfile"></div>
+          <a href="" className="UserInfoNickName">
+            <div>닉네임</div>
+            <span className="UserInfoManage">내정보 관리</span>
+          </a>
+          <div className="UserInfoArea">나의 지역</div>
         </div>
-        <div className="MySubs">
-          <div className="Subscribe">
-            <span style={{ fontSize: "1.6rem" }}>구독권</span>
-            <span style={{ fontSize: "1.2rem", padding: "8px" }}>0회</span>
-          </div>
-          <button style={{ marginRight: "4%", width: "50%" }}>충전하기</button>
-        </div>
-        <div className="MySet">
-          <button className="MyMod">프로필 수정</button>
-          <button className="MySetting">설정</button>
-        </div>
-      </div>
+        <ul className="UserInfoList">
+          <li className="ListSubCont">
+            <div className="ListSubscribe">
+              <div className="ListSubLeft">
+                <span>구독권</span>
+              </div>
+              <div className="ListSubRight">
+                <button className="ListChargeBtn">
+                  <span>충전하기</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li className="ListRevCont">
+            <a href="" className="ListReview">
+              <div className="ListRevLeft">
+                <span>나의 후기</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };

@@ -1,18 +1,19 @@
-import "./App.css"
-import React, { createContext, useState } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Mypage from "@page/mypage"
-import Login from "./pages/login"
-import Review from "./pages/review"
-import Home from "./pages/home"
-import Header from "./components/common/header"
-import Center from "./pages/center"
-import Board from "@page/board"
-import styles from "./App.css"
-import Signup from "./pages/signup"
-import CenterInfoPage from "@page/centerInfoPage"
-import WriteBoard from "@page/writeboard"
-export const ThemeContext = createContext()
+import "./App.css";
+import React, { createContext, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Login from "./pages/login";
+import Review from "./pages/review";
+import Home from "./pages/home";
+import Header from "./components/common/header";
+import Center from "./pages/center";
+import Board from "@page/board";
+import styles from "./App.css";
+import Signup from "./pages/signup";
+import CenterInfoPage from "@page/centerInfoPage";
+import WriteBoard from "@page/writeboard";
+import MyPage from "./pages/MyPage";
+export const ThemeContext = createContext();
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
