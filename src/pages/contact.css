@@ -1,0 +1,129 @@
+.Customer {
+  margin: 0 auto;
+}
+
+.CustomerContent {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.HelpBox {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.HelpExplain {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.HelpSearch {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.HelpSearchBox {
+  padding: 15px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  outline: none;
+  background-color: #f2f5f7;
+  appearance: none;
+  font-size: 16px;
+  color: #282b33;
+  width: 100%;
+  margin: 0;
+}
+
+.HelpCategory {
+  padding: 30px 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.HelpCategory h2 {
+  border-bottom: 3px solid #ffc645;
+  display: inline-block;
+}
+
+.HelpCategory ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  list-style: none;
+  margin: 5% 0;
+}
+
+.HelpCategory a {
+  outline: none;
+  color: #282b33;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  padding: 15px 0;
+  display: block;
+}
+
+.HelpCategory li {
+  width: 13.5%;
+  list-style: none;
+}
+
+.QuickHelp {
+  margin: 20px;
+  padding: 20px 0;
+}
+
+.QuickHelp h2 {
+  border-bottom: 3px solid #ffc645;
+  display: inline-block;
+}
+
+.QuickHelp ul {
+  overflow: auto;
+  display: inline-block;
+  border: none;
+  margin-top: 5%;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.QuickHelp li {
+  display: inline-block;
+  border: none;
+  margin: 5px 0;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.QuickGo {
+  background-color: #eee;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 300;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.QuickGo:hover {
+  background-color: #ffc645;
+  cursor: pointer;
+}

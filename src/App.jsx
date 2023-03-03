@@ -1,21 +1,22 @@
-import "./App.css"
-import React, { createContext, useState } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Mypage from "./pages/mypage"
-import Login from "./pages/login"
-import Review from "./pages/review"
-import Home from "./pages/home"
-import Header from "./components/common/header"
-import Board from "@page/board"
-import styles from "./App.css"
-import Signup from "./pages/signup"
-export const ThemeContext = createContext()
+import "./App.css";
+import React, { createContext, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Mypage from "./pages/mypage";
+import Login from "./pages/login";
+import Review from "./pages/review";
+import Home from "./pages/home";
+import Header from "./components/common/header";
+import Board from "@page/board";
+import styles from "./App.css";
+import Signup from "./pages/signup";
+import Contact from "./pages/contact";
+export const ThemeContext = createContext();
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
   const darkModeTheme = {
     darkMode,
     setDarkMode,
-  }
+  };
   return (
     <ThemeContext.Provider value={darkModeTheme}>
       <div className={styles.app}>
@@ -30,13 +31,14 @@ function App() {
 
               <Route exact path="/board" element={<Board />} />
               <Route exact path="/mypage" element={<Mypage />} />
+              <Route exact path="/contact" element={<Contact />} />
             </Routes>
           </main>
           {/* footer */}
         </BrowserRouter>
       </div>
     </ThemeContext.Provider>
-  )
+  );
 }
 
-export default App
+export default App;
