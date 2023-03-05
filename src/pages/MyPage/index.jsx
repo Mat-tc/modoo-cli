@@ -1,6 +1,7 @@
 import React from "react";
 import { Introduce } from "./Introduce";
 import "./mypage.css";
+import { UserHelp } from "./UserHelp/Index";
 import { UserInfo } from "./UserInfo";
 import { UserPlace } from "./UserPlace";
 
@@ -13,6 +14,7 @@ export const MyPage = () => {
         <UserInfo />
         <Introduce />
         <UserPlace />
+        <UserHelp />
       </div>
     </div>
   );

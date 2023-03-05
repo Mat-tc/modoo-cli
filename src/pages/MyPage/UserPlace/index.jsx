@@ -3,7 +3,7 @@ import "../mypage.css";
 
 export const UserPlace = () => {
   return (
-    <div>
+    <div className="UserPlace">
       <h1 className="UserPlaceTop">이용 중인 시설</h1>
       <div>
         <div className="UserPlaceBox">

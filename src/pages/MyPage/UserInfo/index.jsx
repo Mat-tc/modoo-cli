@@ -28,9 +28,8 @@ export const UserInfo = () => {
           </li>
           <li className="ListRevCont">
             <a href="" className="ListReview">
-              <div className="ListRevLeft">
-                <span className="ListFont">나의 후기</span>
-              </div>
+              <span className="ListFont">나의 후기</span>
+              <span className="ListRevLink">&gt;</span>
             </a>
           </li>
         </ul>

@@ -6,7 +6,7 @@
   max-width: 76.8rem;
   margin: 0 auto;
   min-height: 100%;
-  padding: 7rem 0 8.9rem;
+  padding: 7rem 0 7rem;
 }
 
 section {
@@ -72,7 +72,7 @@ section {
 }
 
 .UserInfoList {
-  border-top: 0.1rem solid #ccc;
+  border-top: 0.1rem solid #e6e6e6;
   display: grid;
   grid-template:
     "a b"
@@ -83,7 +83,7 @@ section {
 }
 
 .ListSubCont {
-  border-right: 0.1rem solid #ccc;
+  border-right: 0.1rem solid #e6e6e6;
   grid-area: a;
   height: 4.8rem;
   list-style: none;
@@ -101,7 +101,6 @@ section {
 }
 
 .ListSubLeft {
-  padding-right: 0.8rem;
   display: flex;
   align-items: center;
   margin: 0;
@@ -150,10 +149,20 @@ section {
   font-size: 1rem;
 }
 
+.ListRevLink {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  padding-right: 3.5rem;
+}
+
 .ListRevLeft {
   padding-right: 0.8rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -239,6 +248,10 @@ section {
   cursor: pointer;
 }
 
+.UserPlace {
+  margin-bottom: 3rem;
+}
+
 .UserPlaceTop {
   padding: 0.7rem;
   margin-bottom: 0.7rem;
@@ -268,7 +281,6 @@ section {
 .UserPlaceImg {
   width: 8rem;
   height: 8rem;
-  border-radius: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,7 +303,7 @@ section {
 }
 
 .UserPlaceNum {
-  width: 8rem;
+  width: 6.5rem;
   height: 3rem;
   border: 0.1rem solid #ccc;
   border-radius: 0.4rem;
@@ -305,11 +317,49 @@ section {
 }
 
 .NumFont {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .UserPlaceExpBody {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.UserHelpBody {
+  margin-top: 1.2rem;
+}
+
+.UserHelpCont {
+  line-height: normal;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  position: relative;
+}
+
+.UserHelpCenter {
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  height: 4.8rem;
+  border-bottom: 0.1rem solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.UserHelpFont {
+  font-size: 1.2rem;
+}
+
+.UserHelpLink {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.2rem;
 }
