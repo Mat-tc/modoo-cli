@@ -2,7 +2,7 @@ import React from "react";
 import { Introduce } from "./Introduce";
 import "./mypage.css";
 import { UserInfo } from "./UserInfo";
-import { UsingPlace } from "./UserPlace";
+import { UserPlace } from "./UserPlace";
 
 export const MyPage = () => {
   return (
@@ -12,7 +12,7 @@ export const MyPage = () => {
       <div className="MyPageContainer">
         <UserInfo />
         <Introduce />
-        <UsingPlace />
+        <UserPlace />
       </div>
     </div>
   );

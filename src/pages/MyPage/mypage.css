@@ -1,9 +1,12 @@
+.UserInfo {
+  margin-bottom: 3rem;
+}
+
 .MyPageBody {
-  padding-top: 2rem;
   max-width: 76.8rem;
   margin: 0 auto;
   min-height: 100%;
-  padding: 9.2rem 0 8.9rem;
+  padding: 7rem 0 8.9rem;
 }
 
 section {
@@ -41,14 +44,15 @@ section {
   font-size: 1.6rem;
   font-weight: 400;
   margin-top: 0.4rem;
-  margin-left: 1.2rem;
+  margin-left: 1.8rem;
   cursor: pointer;
 }
 
 .UserInfoManage {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-right: 1.3rem;
+  padding-left: 0;
 }
 
 .UserInfoArea {
@@ -58,7 +62,7 @@ section {
   height: 3rem;
   overflow: hidden;
   background: #fff;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #ccc;
   border-radius: 0.4rem;
   display: block;
   line-height: 3rem;
@@ -68,11 +72,10 @@ section {
 }
 
 .UserInfoList {
-  border-top: 0.1rem solid black;
+  border-top: 0.1rem solid #ccc;
   display: grid;
   grid-template:
     "a b"
-    "c d"
     /1fr 1fr;
   grid-gap: 0.1rem;
   margin: 0;
@@ -80,6 +83,7 @@ section {
 }
 
 .ListSubCont {
+  border-right: 0.1rem solid #ccc;
   grid-area: a;
   height: 4.8rem;
   list-style: none;
@@ -142,10 +146,170 @@ section {
   padding: 0 1.6rem;
 }
 
+.ListFont {
+  font-size: 1rem;
+}
+
 .ListRevLeft {
   padding-right: 0.8rem;
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.Introduce {
+  margin-bottom: 3rem;
+}
+
+.IntroTop {
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.IntroBody {
+  line-height: normal;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  position: relative;
+}
+
+.IntroBox {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.IntroWord {
+  font-size: 1.2rem;
+}
+
+.IntroBoxRight {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.IntroDelBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 2.2rem;
+}
+
+.IntroInputBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.IntroInput {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.IntroInputBtn {
+  width: 2.8rem;
+  height: 2.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.UserPlaceTop {
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.UserPlaceBox {
+  line-height: normal;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.UserPlaceName {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.UserPlaceBottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.UserPlaceImg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: pink;
+  margin: 0 1rem;
+}
+
+.UserPlaceExpBox {
+  display: flex;
+  position: relative;
+  margin: 0 1rem;
+  flex-direction: column;
+  float: left;
+}
+
+.UserPlaceExp {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.UserPlaceNum {
+  width: 8rem;
+  height: 3rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 1rem;
+  bottom: 1.4rem;
+}
+
+.NumFont {
+  font-size: 1.3rem;
+}
+
+.UserPlaceExpBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

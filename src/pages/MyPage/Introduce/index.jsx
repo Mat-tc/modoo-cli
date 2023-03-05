@@ -40,40 +40,36 @@ export const Introduce = () => {
 
   return (
     <div className="Introduce">
-      <h1 style={{ padding: "5px" }}>ME</h1>
-      {Introduce.map((data) => (
-        <div key={data.id} style={{ marginTop: "2%" }}>
-          <span style={{ fontSize: "20px" }}> {data.title} </span>
-          <button className="DelBtn" onClick={() => handleClick(data.id)}>
-            x
-          </button>
+      <h1 className="IntroTop">ME</h1>
+      <div className="IntroBody">
+        <div>
+          {Introduce.map((data) => (
+            <div key={data.id} className="IntroBox">
+              <span className="IntroWord"> {data.title} </span>
+              <div className="IntroBoxRight">
+                <button
+                  className="IntroDelBtn"
+                  onClick={() => handleClick(data.id)}
+                >
+                  x
+                </button>
+              </div>
+            </div>
+          ))}
+          <form onSubmit={handleSubmit} className="IntroInputBox">
+            <input
+              className="IntroInput"
+              type="text"
+              name="value"
+              placeholder="자신을 소개하세요."
+              autoComplete="off"
+              value={value}
+              onChange={handleChange}
+            />
+            <input className="IntroInputBtn" type="submit" value="입력" />
+          </form>
         </div>
-      ))}
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "flex", paddingTop: "0.5rem", marginTop: "2%" }}
-      >
-        <input
-          className="MyIntro"
-          type="text"
-          name="value"
-          style={{ flex: "10", padding: "5px" }}
-          placeholder="자신을 소개하세요."
-          autoComplete="off"
-          value={value}
-          onChange={handleChange}
-        />
-        <input
-          style={{
-            padding: "0.5rem",
-            borderRadius: "0.25rem",
-            borderWidth: "1px",
-            border: "black solid 1px",
-          }}
-          type="submit"
-          value="입력"
-        />
-      </form>
+      </div>
     </div>
   );
 };
