@@ -1,9 +1,9 @@
-import React from "react"
-import styles from "../components/login/login.module.css"
-import page from "./page.module.css"
-import classNames from "classnames"
-import { useNavigate } from "react-router-dom"
-import GoogleLogin from "../components/login/googleLogin"
+import React from 'react'
+import styles from '../components/login/login.module.css'
+import page from './page.module.css'
+import classNames from 'classnames'
+import { useNavigate } from 'react-router-dom'
+import GoogleLogin from '../components/login/googleLogin'
 // 참고 https://devjeong.com/react/react-1/
 
 const Login = () => {
@@ -20,18 +20,18 @@ const Login = () => {
           <div className={styles.inputForm}>
             <input
               className={styles.input}
-              type="email"
-              placeholder="아이디"
-              id="id"
+              type='email'
+              placeholder='아이디'
+              id='id'
             />
           </div>
 
           <div className={styles.inputForm}>
             <input
               className={styles.input}
-              type="password"
-              placeholder="비밀번호"
-              id="password"
+              type='password'
+              placeholder='비밀번호'
+              id='password'
             />
           </div>
         </div>
@@ -45,13 +45,15 @@ const Login = () => {
         <div className={styles.btnGroup}>
           <button className={styles.KakaoBtn}>K</button>
           <button className={styles.NaverBtn}>N</button>
-          <GoogleLogin />
+          <button className={styles.GoogleBtn}>
+            <GoogleLogin />
+          </button>
         </div>
 
         <p className={classNames(styles.forgetID)}>
           아이디를 잊으셨나요?&nbsp; &nbsp;
-          <span className="goto">아이디찾기</span>
-          <span className="goto" onClick={() => navigate("/signup")}>
+          <span className='goto'>아이디찾기</span>
+          <span className='goto' onClick={() => navigate('/signup')}>
             회원가입
           </span>
         </p>
