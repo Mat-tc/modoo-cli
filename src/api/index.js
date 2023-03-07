@@ -8,3 +8,5 @@ function createInstaceWithAuth(url) {
     withCredentials: true,
   })
 }
+
+export const user = createInstaceWithAuth('/category')

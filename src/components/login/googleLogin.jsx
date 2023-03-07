@@ -34,6 +34,7 @@ const GoogleLogin = () => {
 
   useScript('https://accounts.google.com/gsi/client', () => {
     window.google.accounts.id.initialize({
+      // eslint-disable-next-line no-undef
       client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
       callback: onGoogleSignIn,
     })
