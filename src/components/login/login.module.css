@@ -1,17 +1,17 @@
+@value --font-xs, --font-s,--font-m, --font-xl from '@css/font.css';
 .LoginContainer {
-  max-width: 500px;
-  margin: 120px auto;
+  max-width: 400px;
+  margin: auto;
 }
 
-.h1{
+.h1 {
   text-align: center;
 }
-
 
 .pd {
-  font-size: 100%;
+  font-size: --font-s;
   text-align: center;
-  margin : 1rem 0;
+  margin: 1rem 0;
 }
 
 .loginpa {
@@ -28,21 +28,14 @@
   padding: 0.5rem;
 }
 
-.input {
-  width: calc(100% - 20px);
-  margin: 0 0;
-  background: inherit;
-}
-
 .LoginID,
 .LoginPassword {
-  margin: 2% auto;
   display: block;
   position: relative;
 }
 .inputForm {
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0.7rem;
   background: inherit;
   margin-bottom: 0.5rem;
 }
@@ -51,14 +44,14 @@
   background: #e91e63;
   display: block;
   width: 100%;
-  padding : 1rem;
+  padding: 0.7rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  color: inherit;
 }
 
 .separate {
+  content: '';
   display: block;
   margin: 30px auto 10px;
   text-align: center;
@@ -70,7 +63,7 @@
   max-width: 680px;
 }
 .separate::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 8px;
   left: 0;
@@ -79,7 +72,7 @@
   width: 45%;
 }
 .separate::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 8px;
   right: 0;
@@ -88,32 +81,38 @@
   width: 45%;
 }
 
+.btnGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .KakaoBtn,
 .NaverBtn,
 .GoogleBtn {
   display: block;
-  width: 100%;
-  padding : 1rem;
-  border-radius: 8px;
-  margin: 2% auto;
+  width: 40px;
+  height: 40px;
+  padding: 0.7rem;
+  border-radius: 50%;
+  margin: 0.5rem auto;
   border: none;
   cursor: pointer;
-  font-size: 100%;
-  color: inherit;
+  font-size: --font-xl;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #dadce0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .KakaoBtn {
-  background: 	#FEE500;
+  background: #fee500;
 }
 .NaverBtn {
-  background: #2DB400;
-}
-.GoogleBtn {
-  background: #ddd;
+  background: #2db400;
 }
 
 .forgetID {
-  font-size: 100%;
+  font-size: --font-s;
   margin: 5% auto;
   text-align: center;
 }
-

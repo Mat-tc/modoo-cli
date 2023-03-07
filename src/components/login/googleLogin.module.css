@@ -1,0 +1,12 @@
+.GoogleBtn {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin: 0.5rem auto;
+  border: none;
+  cursor: pointer;
+  font-size: --font-m;
+  color: black;
+}
+
