@@ -9,4 +9,4 @@ function createInstaceWithAuth(url) {
   })
 }
 
-export const user = createInstaceWithAuth('/category')
+export const category = createInstaceWithAuth('/category')

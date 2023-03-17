@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import page from './page.module.css'
 import classNames from 'classnames'
 import Topic from '../components/board/topic'
@@ -10,29 +10,15 @@ import { ThemeContext } from '@/App'
 
 import { useNavigate } from 'react-router-dom'
 
+import { getCategories } from '../api/board/category/category'
 const Board = () => {
   const navigate = useNavigate()
   const { darkMode } = useContext(ThemeContext)
-  const categories = [
-    { id: 96, title: 'should' },
-    { id: 54, title: 'inch' },
-    { id: 55, title: 'coming' },
-    { id: 2, title: 'under' },
-    { id: 40, title: 'mysterious' },
-    { id: 57, title: 'or' },
-    { id: 58, title: 'married' },
-    { id: 80, title: 'diagram' },
-    { id: 13, title: 'coal' },
-    { id: 37, title: 'manufacturing' },
-    { id: 70, title: 'arrive' },
-    { id: 38, title: 'cup' },
-    { id: 61, title: 'gave' },
-    { id: 32, title: 'work' },
-    { id: 18, title: 'pay' },
-    { id: 36, title: 'stove' },
-    { id: 21, title: 'dozen' },
-    { id: 47, title: 'castle' },
-  ]
+  const [categories, setCategories] = useState([])
+
+  useEffect(()=>{
+    getCategories().then(res => setCategories(res.data))
+  }, [])
   return (
     <main className={page.container}>
       <div className={styles.flex}>
@@ -66,7 +52,7 @@ const Board = () => {
             className={classNames(styles.gotoCategory, 'goto')}
             key={title.id}
           >
-            {title.title}
+            {title.name}
           </dd>
         ))}
       </section>

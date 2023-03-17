@@ -1,5 +1,6 @@
+import {category} from '@api/index'
 const getCategories = () => {
-  return 0
+  return category.get('/all')
 }
 
 export { getCategories }
