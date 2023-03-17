@@ -3,4 +3,8 @@ const getCategories = () => {
   return category.get('/all')
 }
 
-export { getCategories }
+const getCategoryName = (id) => {
+  return category.get(`?categoryId=${id}`)
+}
+
+export { getCategories, getCategoryName }

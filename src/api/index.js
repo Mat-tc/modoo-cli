@@ -10,3 +10,4 @@ function createInstaceWithAuth(url) {
 }
 
 export const category = createInstaceWithAuth('/category')
+export const community = createInstaceWithAuth('/community')

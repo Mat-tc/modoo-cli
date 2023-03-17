@@ -15,7 +15,9 @@ const Board = () => {
   const navigate = useNavigate()
   const { darkMode } = useContext(ThemeContext)
   const [categories, setCategories] = useState([])
-
+  const toCategory = (id) => {
+    navigate(`/board/category/${id}`)
+  }
   useEffect(()=>{
     getCategories().then(res => setCategories(res.data))
   }, [])
@@ -51,6 +53,7 @@ const Board = () => {
           <dd
             className={classNames(styles.gotoCategory, 'goto')}
             key={title.id}
+            onClick={()=> toCategory(title.id)}
           >
             {title.name}
           </dd>

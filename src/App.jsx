@@ -12,6 +12,7 @@ import styles from './App.css'
 import Signup from './pages/signup'
 import CenterInfoPage from '@page/centerInfoPage'
 import WriteBoard from '@page/writeboard'
+import Categoryboard from './pages/categoryboard'
 export const ThemeContext = createContext()
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               <Route exact path='/board' element={<Board />} />
               <Route exact path='/mypage' element={<MyPage />} />
               <Route exact path='/board/write' element={<WriteBoard />} />
+              <Route exact path='/board/category/:categoryId' element={<Categoryboard />} />
             </Routes>
           </main>
           {/* footer */}
